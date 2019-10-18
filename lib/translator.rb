@@ -20,7 +20,7 @@ def load_library(file_path)
     :get_meaning => {
       #the keys inside the 'get_meaning' hash are the Japanese emoticons
       #the emoticon keys inside the 'get_meaning' hash point to their meanings
-      japanese_emoticons.map do |k, v|
+      japanese_emoticons.map do |k|
         binding.pry
       end
     },
