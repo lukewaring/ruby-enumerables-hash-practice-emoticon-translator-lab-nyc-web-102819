@@ -6,7 +6,6 @@ def load_library(file_path)
   
   japanese_emoticons = emoticons_file.map do |meaning, emoticons|
     emoticons[1]
-    binding.pry
   end
   
   english_emoticons = emoticons_file.map do |meaning, emoticons|
