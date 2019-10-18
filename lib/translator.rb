@@ -16,7 +16,7 @@ def load_library(file_path)
     meaning
   end
   
-  {
+  hash = {
     :get_meaning => {
       japanese_emoticons[0] => meanings[0],
       japanese_emoticons[1] => meanings[1],
@@ -48,6 +48,16 @@ def load_library(file_path)
       english_emoticons[12] => japanese_emoticons[12]
     }
   }
+end
+
+def load_library(file_path)
+  library = YAML.load_file(file_path)
+  result = {"get_meaning" => {}, "get_emoticon" => {}}
+  library.each do |meaning, emoticons|
+    result["get_meaning"][emoticons[1]] = meaning
+    result["get_emoticon"][emoticons[0]] = emoticons[1]
+  end
+  result
 end
 
 def get_japanese_emoticon(file_path, emoticon)
