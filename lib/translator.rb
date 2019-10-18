@@ -16,7 +16,7 @@ def load_library(file_path)
     meaning
   end
   
-  hash = {
+  {
     :get_meaning => {
       #the keys inside the 'get_meaning' hash are the Japanese emoticons
       #the emoticon keys inside the 'get_meaning' hash point to their meanings
