@@ -18,11 +18,19 @@ def load_library(file_path)
   
   {
     :get_meaning => {
-      #the keys inside the 'get_meaning' hash are the Japanese emoticons
-      #the emoticon keys inside the 'get_meaning' hash point to their meanings
-      japanese_emoticons.map do |k|
-        japanese_emoticons
-      end
+      japanese_emoticons[0] => meanings[0],
+      japanese_emoticons[1] => meanings[1],
+      japanese_emoticons[2] => meanings[2],
+      japanese_emoticons[3] => meanings[3],
+      japanese_emoticons[4] => meanings[4],
+      japanese_emoticons[5] => meanings[5],
+      japanese_emoticons[6] => meanings[6],
+      japanese_emoticons[7] => meanings[7],
+      japanese_emoticons[8] => meanings[8],
+      japanese_emoticons[9] => meanings[9],
+      japanese_emoticons[10] => meanings[10],
+      japanese_emoticons[11] => meanings[11],
+      japanese_emoticons[12] => meanings[12]
     },
     :get_emoticon => {
       english_emoticons[0] => japanese_emoticons[0],
